@@ -28,3 +28,7 @@ the six objects that are used during the task are:
 - bottle
 
 ![Setup scheme of the task](/readme_images/target_objects.png?raw=true "Setup scheme of the task")
+
+## Solution implemented
+
+## Running the project
