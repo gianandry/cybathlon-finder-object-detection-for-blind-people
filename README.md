@@ -35,3 +35,7 @@ The solution implemented requires a HD webcam and a computer. The camera can be 
 The second phase starts when the target is defined. The user must move their arm to check the zone where they want to find the desired object. If an obstacle is framed, the system reproduces the obstacle sound. In case of the target, it reproduces the target sound. For both sounds are directional. The sound increases in velocity as the target gets closer to the center of the camera. After the system locates the target for more than ten frames and it is no longer seen, the system asks the user if they have grasped the target.
 ## Running the project
 
+```
+python main.py
+```
+
