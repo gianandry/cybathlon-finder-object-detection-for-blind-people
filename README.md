@@ -31,5 +31,6 @@ the six objects that are used during the task are:
 
 ## Solution implemented
 The solution implemented requires a webcam HD and a computer. The camera can be hand held by the user or it can be attached to a band and tied to the wrist. 
-In a first phase the user has to recognize the target. After the start, the system informs that it is ready, so the user has to recognize with the camera the target of the trial. Then the system communicates the user the object detected and asks if he wants to pass to the next phase. This check is performed because sometimes happens that the system recognizes an object while it is not pointing to the target in the box. This phase is specific for the cybathon race, anyway it is possible to modify easily modify it and make the user direcly communicate the target by vocal command.
+In a first phase the user has to recognize the target. After the start, the system informs that it is ready, so the user has to recognize with the camera the target of the trial. Then the system communicates the user the object detected and asks if he wants to pass to the next phase. This check is performed because sometimes happens that the system recognizes an object while it is not pointing to the target in the box. This phase is specific for the cybathon race, anyway it is possible to easily modify it and to make the user direcly communicate the target by vocal command.
+The second phase starts when the target is defined. The user must move his arm to check the zone where he wants to find the desired object. 
 ## Running the project
