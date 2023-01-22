@@ -30,7 +30,8 @@ the six objects that are used during the task are:
 ![Setup scheme of the task](/readme_images/target_objects.png?raw=true "Setup scheme of the task")
 
 ## Solution implemented
-The solution implemented requires a webcam HD and a computer. The camera can be hand held by the user or it can be attached to a band and tied to the wrist. 
-In a first phase the user has to recognize the target. After the start, the system informs that it is ready, so the user has to recognize with the camera the target of the trial. Then the system communicates the user the object detected and asks if he wants to pass to the next phase. This check is performed because sometimes happens that the system recognizes an object while it is not pointing to the target in the box. This phase is specific for the cybathon race, anyway it is possible to easily modify it and to make the user direcly communicate the target by vocal command.
-The second phase starts when the target is defined. The user must move his arm to check the zone where he wants to find the desired object. 
+The solution implemented requires a HD webcam and a computer. The camera can be hand-held by the user or it can be attached to a band and tied to the wrist. In the first phase, the user has to recognize the target. After the start, the system informs the user that it is ready, so the user has to recognize the target of the trial with the camera. Then the system communicates to the user the object detected and asks if they want to move on to the next phase. This check is performed because sometimes the system recognizes an object while it is not pointing to the target in the box. This phase is specific for the cybathon race, but it is possible to easily modify it and have the user directly communicate the target through vocal command.
+
+The second phase starts when the target is defined. The user must move their arm to check the zone where they want to find the desired object. If an obstacle is framed, the system reproduces the obstacle sound. In case of the target, it reproduces the target sound. For both sounds are directional. The sound increases in velocity as the target gets closer to the center of the camera. After the system locates the target for more than ten frames and it is no longer seen, the system asks the user if they have grasped the target.
 ## Running the project
+
