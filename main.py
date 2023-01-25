@@ -29,7 +29,7 @@ pbt = 'ssd_inception_v2_coco_2017_11_17.pbtxt'
 # Read the neural network
 cvNet = cv.dnn.readNetFromTensorflow(pb,pbt)   
  
-cam = cv.VideoCapture(1)
+cam = cv.VideoCapture(0, cv.CAP_DSHOW)
 
 mytext = "I am ready to start!"
 # speaking initialization
