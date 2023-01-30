@@ -6,7 +6,7 @@ Coccoli Gianmarco - g.coccoli002@studenti.unibs.it <br>
 Scassola federico - f.scassola@studenti.unibs.it<br>
 
 ## Definition of the task
-Finding misplaced objects is a big challenge for blind people. Therefore, they usually keep their own apartment very tidy. 
+Finding misplaced objects is a big challenge for blind people.
 In this task pilots have to locate and grasp a specific object from a group of other objects.
 One of the six boxes on the table near the start line of the task must be opened by the pilot to determine the target object. Thereafter, the identical object must be 
 located on the task space, picked up, and placed on the small table near the finish line of the task.
@@ -48,5 +48,7 @@ For the second phase previously defined, the function `beep_phase.py`. Some inpu
 - **z** corresponds to the value of the zoom in case it is activated,
 - **show_image** can be True or False depending on whether you want to see the frames of the camera in the screen.
 
+A different function `beep_phase_alternative.py` has been implemented to improve the performance for the toothbrush, the most challenging object.
+`beep_phase_tutorial.py` is given to get familiar with the system and the sounds before the use of the complete functioning.
 
 
