@@ -1,11 +1,11 @@
 # Cybathlon finder - object detection for blind people
+This repository contains a possible solution fo the cybathlon race called finder.
 ## Team
 Campanelli Andrea <br>
 Coccoli Gianmarco <br>
 Scassola federico <br>
 
 ## Definition of the task
-This repository contains a possible solution fo the cybathlon race called finder.
 Finding misplaced objects is a big challenge for blind people. Therefore, they usually keep their own apartment very tidy. 
 In this task pilots have to locate and grasp a specific object from a group of other objects.
 One of the six boxes on the table near the start line of the task must be opened by the pilot to determine the target object. Thereafter, the identical object must be 
