@@ -1,9 +1,9 @@
 # Cybathlon finder - object detection for blind people
 This repository contains a possible solution fo the cybathlon race called finder.
 ## Team
-Campanelli Andrea a.campanelli@studenti.unibs.it <br> 
-Coccoli Gianmarco g.coccoli002@studenti.unibs.it <br>
-Scassola federico f.scassola@studenti.unibs.it<br>
+Campanelli Andrea - a.campanelli@studenti.unibs.it <br> 
+Coccoli Gianmarco - g.coccoli002@studenti.unibs.it <br>
+Scassola federico - f.scassola@studenti.unibs.it<br>
 
 ## Definition of the task
 Finding misplaced objects is a big challenge for blind people. Therefore, they usually keep their own apartment very tidy. 
@@ -34,9 +34,19 @@ The solution implemented requires a HD webcam and a computer. The camera can be 
 
 The second phase starts when the target is defined. The user must move their arm to check the zone where they want to find the desired object. If an obstacle is framed, the system reproduces the obstacle sound. In case of the target, it reproduces the target sound. For both sounds are directional. The sound increases in velocity as the target gets closer to the center of the camera. After the system locates the target for more than ten frames and it is no longer seen, the system asks the user if they have grasped the target.
 ## Running the project
-The version of python 3.10 was used. The requirements of the project are present in the file "requiremets.txt".
+The version of python 3.10 was used. The requirements of the project are present in the file "requirements.txt".
+We use the 'ssd_mobilenet_v1_coco' (MobileNet-SSD trained on COCO dataset), trained using TensorFlow Object Detection API.
+These files are contained in "frozen_inference_graph.zip", the latter has to be extracted in the working path.
 The following command starts the system:
 ```
 python main.py
 ```
+For the second phase previously defined, the function "beep_phase.py". Some input parameters can be changed according to the task:
+- nn corresponds to the dimension of the neural network,
+- s corresponds to the minimal accuracy with which an object is recognized,
+- Zoom can be True or False depending on whether you want to use the zoom,
+- z corresponds to the value of the zoom in case it is activated,
+- show_image can be True or False depending on whether you want to see the frames of the camera in the screen.
+
+
 
