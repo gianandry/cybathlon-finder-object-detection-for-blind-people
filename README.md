@@ -20,31 +20,34 @@ The pilot shall verbally communicate the name of the object to the referee. The 
 - bottle <br>
 <br>
 
-![Setup scheme of the task](/readme_images/target_objects.png?raw=true "Target objects")
+![List target objects](/readme_images/target_objects.png?raw=true "Target objects")
 
 ## Solution implemented
 The solution requires a HD webcam and a computer. The camera can be hand-held by the user or attached to a wrist band.
+
+![Our solution device](/readme_images/mounted_device.png?raw=true "The solution implemented")
 
 In the first phase, the user recognizes the target. The system informs the user that it is ready, and the user identifies the target using the camera. The system then communicates the target to the user and asks if they want to move on to the next phase.
 
 In the second phase, the user moves their arm to search for the target object. If an obstacle is framed, the system reproduces an obstacle sound. If the target is framed, the system reproduces a target sound. The sound increases in volume as the target gets closer to the center of the camera. After the system locates the target for more than ten frames and it is no longer seen, the system asks the user if they have grasped the target.
 
 ## Running the project
-The version of python 3.10 was used. The requirements of the project are present in the file `requirements.txt`.
-We use the 'ssd_mobilenet_v1_coco' (MobileNet-SSD trained on COCO dataset), trained using TensorFlow Object Detection API.
-These files are contained in `frozen_inference_graph.zip`, the latter has to be extracted in the working path.
-The following command starts the system:
+The project requires Python 3.10 and the requirements listed in `requirements.txt`.
+In particular, Pygame, OpenCV, SpeechRegonition & pyaudio and pyttsx3 are used.
+We utilize the 'ssd_mobilenet_v1_coco' (MobileNet-SSD trained on COCO dataset), trained using TensorFlow Object Detection API.
+These files are contained in `frozen_inference_graph.zip`, which must be extracted to the working directory.
+To start the system, run the following command:
 ```
 python main.py
 ```
-For the second phase previously defined, the function `beep_phase.py`. Some input parameters can be changed according to the task:
-- **nn** corresponds to the dimension of the neural network,
-- **s** corresponds to the minimal accuracy with which an object is recognized,
-- **Zoom** can be True or False depending on whether you want to use the zoom,
-- **z** corresponds to the value of the zoom in case it is activated,
-- **show_image** can be True or False depending on whether you want to see the frames of the camera in the screen.
+The second phase is implemented in beep_phase.py. Some input parameters can be changed:
+- **nn** corresponds to the neural network size,
+- **s** corresponds to the minimum accuracy of object recognition,
+- **Zoom** can be `True` or `False` depending on whether you want to use the zoom,
+- **z**  corresponds to the zoom value if activated,
+- **show_image** can be `True` or `False` depending on whether you want to disply the camera frames.
 
-A different function `beep_phase_alternative.py` has been implemented to improve the performance for the toothbrush, the most challenging object.
-`beep_phase_tutorial.py` is given to get familiar with the system and the sounds before the use of the complete functioning.
+A different function `beep_phase_alternative.py` has been implemented to improve performance for the toothbrush, which is the most challenging object.
+`beep_phase_tutorial.py` is also available to familiarize with the system and the sounds before using the full functionality.
 
 
