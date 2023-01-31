@@ -194,5 +194,4 @@ def beep_phase(cam, cvNet, classes, target, nn=500, s=0.3, Crop=False, Zoom = Tr
               engine.say(mytext)
               engine.runAndWait()
               break
-           
   return
