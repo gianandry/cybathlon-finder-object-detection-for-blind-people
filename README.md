@@ -65,4 +65,4 @@ The `sounds` folder contains all the audio files used during the program's opera
 
 Additionally, the target sound names contain a number from 1 to 4, representing the area of the frame and the frequency of the sound, where a lower number indicates a higher frequency.
 
-Similarly, obstacle sounds are labeled as sound_wrong with a direction letter.
+Similarly, obstacle sounds are labeled as `sound_wrong with` a direction letter.
