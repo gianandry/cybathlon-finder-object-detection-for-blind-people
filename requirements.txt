@@ -1,0 +1,8 @@
+numpy==1.23.5
+opencv-python==4.7.0.68
+pip==22.3.1
+pygame==2.1.2
+Pygments==2.11.2
+pypiwin32==223
+pyttsx3==2.90
+SpeechRecognition==3.9.0
