@@ -1,5 +1,5 @@
 # Cybathlon finder - object detection for blind people
-This repository contains a possible solution fo the cybathlon race called finder.
+This repository contains a possible solution fo the cybathlon race called Finder.
 ## Team
 Campanelli Andrea - a.campanelli@studenti.unibs.it <br> 
 Coccoli Gianmarco - g.coccoli002@studenti.unibs.it <br>
@@ -27,9 +27,9 @@ The solution requires a HD webcam and a computer. The camera can be hand-held by
 
 ![Our solution device](/readme_images/mounted_device.png?raw=true "The solution implemented")
 
-In the first phase, the user recognizes the target. The system informs the user that it is ready, and the user identifies the target using the camera. The system then communicates the target to the user and asks if they want to move on to the next phase.
+In the first phase, the user recognizes the target. The system informs the user that it is ready, and the user identifies the target using the camera. The system then communicates the target to the user and asks if he wants to move on to the next phase.
 
-In the second phase, the user moves their arm to search for the target object. If an obstacle is framed, the system reproduces an obstacle sound. If the target is framed, the system reproduces a target sound. The sound increases in frequency as the target gets closer to the center of the camera. Stereophonic, high-pitched and severe sounds are implemented to facilitate the location. After the system locates the target and it is no longer seen for more than four seconds, the system asks the user if they have grasped the target.
+In the second phase, the user moves their arm to search for the target object. If an obstacle is framed, the system reproduces an obstacle sound. If the target is framed, the system reproduces a target sound. The sound increases in frequency as the target gets closer to the center of the camera. Stereophonic, high-pitched and severe sounds are implemented to facilitate the location. After the system locates the target and it is no longer seen for more than four seconds, the system asks the user if he has grasped the target.
 
 ## Running the project
 The project requires Python 3.10 and the requirements listed in `requirements.txt`.
